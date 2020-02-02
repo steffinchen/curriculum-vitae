@@ -14,7 +14,7 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h1 className="mb-0">
-            {config.firstName}
+            {config.firstName}{' '}
             <span className="text-primary">{config.lastName}</span>
           </h1>
           <div className="subheading mb-5">
@@ -226,9 +226,9 @@ const IndexPage = () => (
             </li>
             <li className="list-inline-item">
               <i className="fab fa-react"></i>
-              <li className="list-inline-item">
-                <i className="fab fa-angular"></i>
-              </li>
+            </li>
+            <li className="list-inline-item">
+              <i className="fab fa-angular"></i>
             </li>
             <li className="list-inline-item">
               <i className="fab fa-html5"></i>
