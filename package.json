@@ -1,14 +1,14 @@
 {
-  "name": "gatsby-starter-resume",
+  "name": "curriculum-vitae",
   "version": "0.0.1",
-  "description": "Gatsby.js V2 starter template based on Resume by startbootstrap",
+  "description": "Online resume built with GatsbyJs",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anubhavsrivastava/gatsby-starter-resume.git"
+    "url": "git+https://github.com/steffinchen/curriculum-vitae"
   },
   "author": {
-    "name": "Anubhav Srivastava",
-    "email": "anubhav.srivastava00@gmail.com"
+    "name": "Stefanie Wehrle",
+    "email": "steffinchen@gmail.com"
   },
   "dependencies": {
     "gatsby": "^2.4.3",

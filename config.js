@@ -7,6 +7,7 @@ module.exports = {
   manifestThemeColor: '#663399',
   manifestDisplay: 'standalone',
   manifestIcon: 'src/assets/img/favicon.png',
+  pathPrefix: '/curriculum-vitae/',
   firstName: 'Stefanie',
   lastName: 'Wehrle',
   // social
