@@ -3,9 +3,13 @@ section.resume-section {
   padding-bottom: 5rem !important;
   max-width: 75rem;
   .resume-item {
-    .resume-content {}
+    .resume-content {
+    }
     .resume-date {
       min-width: none;
+    }
+    .flex-cell {
+      min-width: 120px;
     }
   }
 }

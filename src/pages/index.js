@@ -23,16 +23,20 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            I am experienced in leveraging agile frameworks to provide a robust
-            synopsis for high level overviews. Iterative approaches to corporate
-            strategy foster collaborative thinking to further the overall value
-            proposition.
+            Full-stack developer with 9+ years of experience, and a passion for
+            front-end. I believe in creating web apps that are effortless to
+            use, a joy to maintain, and make lives easier.
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
               const { icon, url } = social;
               return (
-                <a key={url} href={url}>
+                <a
+                  key={url}
+                  href={url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i className={`fab ${icon}`}></i>
                 </a>
               );
@@ -52,69 +56,96 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Senior Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
-              </p>
+              <h3 className="mb-0">Senior Front-End Developer</h3>
+              <div className="subheading mb-3">Sunrise Communications AG</div>
+              <ul>
+                <li>
+                  Development of new white-label web app to scan an ID or
+                  passport as proof of identification
+                </li>
+                <li>
+                  Added E2E Protractor tests for web app that relies heavily on
+                  the camera
+                </li>
+                <li>
+                  New features, bug fixes and maintenance of the yallo and
+                  Lebara websites and self-care web app
+                </li>
+              </ul>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">March 2013 - Present</span>
+              <div className="text-primary">January 2020 - Present</div>
+              <div className="text-primary">Zürich, Switzerland</div>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Web Developer</h3>
-              <div className="subheading mb-3">Intelitec Solutions</div>
-              <p>
-                Capitalize on low hanging fruit to identify a ballpark value
-                added activity to beta test. Override the digital divide with
-                additional clickthroughs from DevOps. Nanotechnology immersion
-                along the information highway will close the loop on focusing
-                solely on the bottom line.
-              </p>
+              <h3 className="mb-0">Software Development Engineer</h3>
+              <div className="subheading mb-3">Findmypast Ltd.</div>
+              <li>
+                Migrated substantial parts of the .NET monolith to dedicated
+                JavaScript (React), NodeJS and Elixir (micro-)services
+              </li>
+              <li>
+                Implemented A/B experiments around subscription and payments UI
+              </li>
+              <li>
+                Maintained and supported various Elixir, NodeJs, React and .NET
+                services, mainly in the payment area, including integrations
+                with WorldPay and PayPal
+              </li>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">December 2011 - March 2013</span>
+              <div className="text-primary">February 2017 - September 2019</div>
+              <div className="text-primary">London, UK</div>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">Junior Web Designer</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Podcasting operational change management inside of workflows to
-                establish a framework. Taking seamless key performance
-                indicators offline to maximise the long tail. Keeping your eye
-                on the ball while performing a deep dive on the start-up
-                mentality to derive convergence on cross-platform integration.
-              </p>
+              <h3 className="mb-0">Senior Application Engineer</h3>
+              <div className="subheading mb-3">Swiss Re Management Ltd</div>
+              <li>
+                Developed and maintained a web application which simplifies
+                reporting financial data to the Swiss regulator FINMA. The
+                reporting process could be reduced from eight to two weeks
+              </li>
+              <li>
+                Responsible for the maintenance and integration of the system
+                reporting Solvency II data to various European regulators. The
+                systems include an in-house developed solution as well as a
+                third-party solution. Tasks include integrating new updates
+                provided by the vendor, administrating a Suse linux server, as
+                well as providing bug fixes and new feature
+              </li>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">July 2010 - December 2011</span>
+              <div className="text-primary">August 2012 - November 2017</div>
+              <div className="text-primary">Zürich, Switzerland</div>
             </div>
           </div>
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
             <div className="resume-content">
-              <h3 className="mb-0">Web Design Intern</h3>
-              <div className="subheading mb-3">Shout! Media Productions</div>
-              <p>
-                Collaboratively administrate empowered markets via plug-and-play
-                networks. Dynamically procrastinate B2C users after installed
-                base benefits. Dramatically visualize customer directed
-                convergence without revolutionary ROI.
-              </p>
+              <h3 className="mb-0">Software Development Trainee</h3>
+              <div className="subheading mb-3">Swiss Re Ltd</div>
+              <li>
+                As a member of the Solution Quality Assurance team, I was part
+                of several code reviews on other projects
+              </li>
+              <li>
+                Implemented a web application to calculate Key Performance
+                Indicators (KPI) based on project data
+              </li>
+              <li>
+                Developed and executed tests to compare performance of various
+                web services such as SOAP, remote EJB and REST
+              </li>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">September 2008 - June 2010</span>
+              <div className="text-primary">August 2008 - July 2012</div>
+              <div className="text-primary">Zürich, Switzerland</div>
             </div>
           </div>
         </div>
@@ -131,24 +162,52 @@ const IndexPage = () => (
 
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">University of Colorado Boulder</h3>
-              <div className="subheading mb-3">Bachelor of Science</div>
-              <div>Computer Science - Web Development Track</div>
-              <p>GPA: 3.23</p>
+              <h3 className="mb-0">
+                ZHAW (Zurich University of Applied Sciences)
+              </h3>
+              <div className="subheading mb-3">
+                Bachelor of Science ZFH in Computer Science
+              </div>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2006 - May 2010</span>
+              <div className="text-primary">September 2013 - July 2017</div>
+              <div className="text-primary">Winterthur, Switzerland</div>
             </div>
           </div>
 
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
-              <h3 className="mb-0">James Buchanan High School</h3>
-              <div className="subheading mb-3">Technology Magnet Program</div>
-              <p>GPA: 3.56</p>
+              <h3 className="mb-0">BZZ (Berufsbildungszentrum Zürichsee)</h3>
+              <div className="subheading mb-3">
+                Federal VET Diploma in Information Technology ("Informatikerin
+                EFZ")
+              </div>
+              <ul>
+                <li>
+                  Completed the practical part of the education at Swiss Re Ltd
+                </li>
+                <li>
+                  Graduated as best student of the year in the Canton of Zürich,
+                  which was awarded a scholarship for ZHAW (Züricher Hochschule
+                  der Angewandten Wissenschaften)
+                </li>
+              </ul>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2002 - May 2006</span>
+              <span className="text-primary">August 2008 - July 2012</span>
+              <div className="text-primary">Horgen, Switzerland</div>
+            </div>
+          </div>
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div className="resume-content">
+              <h3 className="mb-0">Conemaugh Township High School</h3>
+              <div>
+                Attended the senior year of high school as an exchange student
+              </div>
+            </div>
+            <div className="resume-date text-md-right">
+              <span className="text-primary">August 2007 - June 2008</span>
+              <div className="text-primary">Davidsville, PA, USA</div>
             </div>
           </div>
         </div>
@@ -162,11 +221,16 @@ const IndexPage = () => (
       >
         <div className="w-100">
           <h2 className="mb-5">Skills</h2>
-
-          <div className="subheading mb-3">
-            Programming Languages &amp; Tools
-          </div>
           <ul className="list-inline dev-icons">
+            <li className="list-inline-item">
+              <i className="fab fa-js-square"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="fab fa-react"></i>
+              <li className="list-inline-item">
+                <i className="fab fa-angular"></i>
+              </li>
+            </li>
             <li className="list-inline-item">
               <i className="fab fa-html5"></i>
             </li>
@@ -174,56 +238,175 @@ const IndexPage = () => (
               <i className="fab fa-css3-alt"></i>
             </li>
             <li className="list-inline-item">
-              <i className="fab fa-js-square"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-angular"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-react"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-node-js"></i>
-            </li>
-            <li className="list-inline-item">
               <i className="fab fa-sass"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-less"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-wordpress"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-gulp"></i>
-            </li>
-            <li className="list-inline-item">
-              <i className="fab fa-grunt"></i>
             </li>
             <li className="list-inline-item">
               <i className="fab fa-npm"></i>
             </li>
+            <li className="list-inline-item">
+              <i className="fab fa-yarn"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="fab fa-java"></i>
+            </li>
+            <li className="list-inline-item">
+              <i className="fab fa-docker"></i>
+            </li>
           </ul>
 
-          <div className="subheading mb-3">Workflow</div>
-          <ul className="fa-ul mb-0">
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Mobile-First, Responsive Design
-            </li>
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Cross Browser Testing &amp; Debugging
-            </li>
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Cross Functional Teams
-            </li>
-            <li>
-              <i className="fa-li fa fa-check"></i>
-              Agile Development &amp; Scrum
-            </li>
-          </ul>
+          <div className="resume-item d-flex flex-row flex-wrap">
+            <div className="m-4 flex-cell ">
+              <div className="subheading mb-3">Proficient</div>
+              <ul className="fa-ul mb-0">
+                <li>
+                  <i className="fa-li fa fa-check"></i>JavaScript
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>NodeJS
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>Elixir
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>C#
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>Java
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>SQL
+                </li>
+              </ul>
+            </div>
+            <div className="m-4">
+              <div className="subheading mb-3">Web Technologies</div>
+              <ul className="fa-ul mb-0">
+                <li>
+                  <i className="fa-li fa fa-check"></i>React
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  GraphQL
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Gatsby
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Angular
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  AngularJS
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Webpack
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Babel
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  HTML5
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  CSS / CSS-in-JS
+                </li>
+              </ul>
+            </div>
+            <div className="m-4">
+              <div className="subheading mb-3">Used in the past</div>
+              <ul className="fa-ul mb-0">
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  PL/SQL
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Android
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Python
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> C
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> F\#
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Swift
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Lisp
+                </li>
+              </ul>
+            </div>
+            <div className="m-4">
+              <div className="subheading mb-3">Interest and Curiosity</div>
+              <ul className="fa-ul mb-0">
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Haskell
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Elm
+                </li>
+              </ul>
+            </div>
+            <div className="m-4">
+              <div className="subheading mb-3">Tools and Methodologies</div>
+              <ul className="fa-ul mb-0">
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  NPM / Yarn
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Databases (Oracle, DB2,
+                  MSSQL)
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Git
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Scrum
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Extreme Programming
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Docker
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> Kubernetes
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i> CI / CD
+                </li>
+              </ul>
+            </div>
+            <div className="m-4">
+              <div className="subheading mb-3">Languages</div>
+              <ul className="fa-ul mb-0">
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  English (fluent)
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  German (native)
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  French (basic)
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -236,16 +419,13 @@ const IndexPage = () => (
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
           <p>
-            Apart from being a web developer, I enjoy most of my time being
-            outdoors. In the winter, I am an avid skier and novice ice climber.
-            During the warmer months here in Colorado, I enjoy mountain biking,
-            free climbing, and kayaking.
+            Apart from being a developer, I enjoy knitting and have a blog where
+            I publish my own patterns. I find knitting is a great way to relax,
+            and keep my hands busy while watching a movie or TV show.
           </p>
           <p className="mb-0">
-            When forced indoors, I follow a number of sci-fi and fantasy genre
-            movies and television shows, I am an aspiring chef, and I spend a
-            large amount of my free time exploring the latest technology
-            advancements in the front-end web development world.
+            I also love to read - mainly thrillers und whodunits - and try to
+            stay healthy by running and doing yoga.
           </p>
         </div>
       </section>
@@ -254,43 +434,41 @@ const IndexPage = () => (
 
       <section
         className="resume-section p-3 p-lg-5 d-flex align-items-center"
-        id="awards"
+        id="extracurriculars"
       >
         <div className="w-100">
-          <h2 className="mb-5">Awards &amp; Certifications</h2>
-          <ul className="fa-ul mb-0">
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              Google Analytics Certified Developer
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>
-              Mobile Web Specialist - Google Certification
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition
-              2009
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - University of Colorado Boulder - Adobe Creative Jam 2008
-              (UI Design Category)
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>2<sup>nd</sup>
-              Place - University of Colorado Boulder - Emerging Tech Competition
-              2008
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>1<sup>st</sup>
-              Place - James Buchanan High School - Hackathon 2006
-            </li>
-            <li>
-              <i className="fa-li fa fa-trophy text-warning"></i>3<sup>rd</sup>
-              Place - James Buchanan High School - Hackathon 2005
-            </li>
-          </ul>
+          <h2 className="mb-5">Extracurriculars and side projects</h2>
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+            <div className="resume-content">
+              <h3 className="mb-0">
+                MLCC (Machine Learning Crash Course) at Google
+              </h3>
+              <div className="subheading mb-3">
+                Zürich, Switzerland - February 2017
+              </div>
+              <ul>
+                <li>
+                  Introduction to Machine Learning concepts, such as Linear
+                  Regression and Neural Networks
+                </li>
+                <li>Gained first experience with Google's TensorFlow APIs</li>
+              </ul>
+            </div>
+          </div>
+          <div className="resume-content mb-5">
+            <h3 className="mb-0">SkillfullyTangled</h3>
+            <div>
+              Knitting blog written with React &amp; Gatsby where I publish my
+              own patterns.
+            </div>
+          </div>
+          <div className="resume-content mb-5">
+            <h3 className="mb-0">Agile Trello Chrome Plugin</h3>
+            <div>
+              Chrome plugin which adds agile functionality to Trello boards and
+              cards.
+            </div>
+          </div>
         </div>
       </section>
     </div>
