@@ -15,10 +15,9 @@ const IndexPage = () => (
         <div className="w-100">
           <h1 className="mb-0">
             {config.firstName}{' '}
-            <span className="text-secondary">{config.lastName}</span>
+            <span className="text-primary">{config.lastName}</span>
           </h1>
           <div className="subheading mb-5">
-            {config.address} · {config.phone} ·
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
@@ -28,7 +27,7 @@ const IndexPage = () => (
           </p>
           <div className="social-icons">
             {config.socialLinks.map(social => {
-              const { icon, url } = social;
+              const { icon, url, name } = social;
               return (
                 <a
                   key={url}
@@ -36,7 +35,8 @@ const IndexPage = () => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className={`${icon}`}></i>
+                  <i className={`${icon}`} alt="foo bar"></i>
+                  <span class="visually-hidden">{name}</span>
                 </a>
               );
             })}
@@ -74,8 +74,10 @@ const IndexPage = () => (
               </ul>
             </div>
             <div className="resume-date text-md-right">
-              <div className="text-primary">January 2020 - September 2021</div>
-              <div className="text-primary">Zürich, Switzerland</div>
+              <div className="text-secondary">
+                January 2020 - September 2021
+              </div>
+              <div className="text-secondary">Zürich, Switzerland</div>
             </div>
           </div>
 
@@ -97,8 +99,10 @@ const IndexPage = () => (
               </li>
             </div>
             <div className="resume-date text-md-right">
-              <div className="text-primary">February 2017 - September 2019</div>
-              <div className="text-primary">London, UK</div>
+              <div className="text-secondary">
+                February 2017 - September 2019
+              </div>
+              <div className="text-secondary">London, UK</div>
             </div>
           </div>
 
@@ -121,8 +125,8 @@ const IndexPage = () => (
               </li>
             </div>
             <div className="resume-date text-md-right">
-              <div className="text-primary">August 2012 - November 2017</div>
-              <div className="text-primary">Zürich, Switzerland</div>
+              <div className="text-secondary">August 2012 - November 2017</div>
+              <div className="text-secondary">Zürich, Switzerland</div>
             </div>
           </div>
 
@@ -144,8 +148,8 @@ const IndexPage = () => (
               </li>
             </div>
             <div className="resume-date text-md-right">
-              <div className="text-primary">August 2008 - July 2012</div>
-              <div className="text-primary">Zürich, Switzerland</div>
+              <div className="text-secondary">August 2008 - July 2012</div>
+              <div className="text-secondary">Zürich, Switzerland</div>
             </div>
           </div>
         </div>
@@ -176,8 +180,8 @@ const IndexPage = () => (
               </ul>
             </div>
             <div className="resume-date text-md-right">
-              <div className="text-primary">September 2013 - July 2017</div>
-              <div className="text-primary">Winterthur, Switzerland</div>
+              <div className="text-secondary">September 2013 - July 2017</div>
+              <div className="text-secondary">Winterthur, Switzerland</div>
             </div>
           </div>
 
@@ -200,11 +204,11 @@ const IndexPage = () => (
               </ul>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2008 - July 2012</span>
-              <div className="text-primary">Horgen, Switzerland</div>
+              <span className="text-secondary">August 2008 - July 2012</span>
+              <div className="text-secondary">Horgen, Switzerland</div>
             </div>
           </div>
-          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
             <div className="resume-content">
               <h3 className="mb-0">Conemaugh Township High School</h3>
               <div>
@@ -212,8 +216,8 @@ const IndexPage = () => (
               </div>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2007 - June 2008</span>
-              <div className="text-primary">Davidsville, PA, USA</div>
+              <span className="text-secondary">August 2007 - June 2008</span>
+              <div className="text-secondary">Davidsville, PA, USA</div>
             </div>
           </div>
           <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
@@ -222,8 +226,8 @@ const IndexPage = () => (
               <div>Attended Bezirksschule Mutschellen</div>
             </div>
             <div className="resume-date text-md-right">
-              <span className="text-primary">August 2003 - June 2007</span>
-              <div className="text-primary">Berikon, AG, Switzerland</div>
+              <span className="text-secondary">August 2003 - June 2007</span>
+              <div className="text-secondary">Berikon, AG, Switzerland</div>
             </div>
           </div>
         </div>
