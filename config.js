@@ -13,27 +13,27 @@ module.exports = {
   // social
   socialLinks: [
     {
-      icon: 'fa-github',
+      icon: 'fab fa-github',
       name: 'Github',
-      url: 'https://github.com/steffinchen'
+      url: 'https://github.com/steffinchen',
     },
     {
-      icon: 'fa-linkedin-in',
+      icon: 'fab fa-linkedin-in',
       name: 'Linkedin',
-      url: 'https://linkedin.com/in/stefanie-wehrle/'
+      url: 'https://linkedin.com/in/stefanie-wehrle/',
     },
     {
-      icon: 'fa-twitter',
-      name: 'Twitter',
-      url: 'https://twitter.com/_steffinchen_'
+      icon: 'fa-solid fa-envelope',
+      name: 'E-Mail',
+      url: 'mailto://steffinchen@gmail.com',
     },
     {
-      icon: 'fa-stack-overflow',
+      icon: 'fab fa-stack-overflow',
       name: 'StackOverflow',
-      url: 'https://stackoverflow.com/users/story/1160138'
-    }
+      url: 'https://stackoverflow.com/users/story/1160138',
+    },
   ],
   email: 'steffinchen@gmail.com',
-  phone: '+44 78 53 66 17 99',
-  address: 'Neuwiesenstrasse 45, CH-8400 Winterthur, Switzerland'
+  phone: '+41 76 588 07 15',
+  address: 'Neuwiesenstrasse 45, CH-8400 Winterthur, Switzerland',
 };

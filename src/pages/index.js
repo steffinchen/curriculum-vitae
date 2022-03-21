@@ -22,7 +22,7 @@ const IndexPage = () => (
             <a href={`mailto:${config.email}`}>{config.email}</a>
           </div>
           <p className="lead mb-5">
-            Full-stack developer with 9+ years of experience, and a passion for
+            Full-stack developer with 10+ years of experience, and a passion for
             front-end. I believe in creating web apps that are effortless to
             use, a joy to maintain, and make lives easier.
           </p>
@@ -36,7 +36,7 @@ const IndexPage = () => (
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className={`fab ${icon}`}></i>
+                  <i className={`${icon}`}></i>
                 </a>
               );
             })}
@@ -59,21 +59,22 @@ const IndexPage = () => (
               <div className="subheading mb-3">Sunrise Communications AG</div>
               <ul>
                 <li>
+                  Designed and prototyped next generation cloud-based serverless
+                  web application integrating with leading CMS{' '}
+                </li>
+                <li>
+                  Developed and optimized yallo, Lebara, and Swype websites,
+                  online shop, and mobile application
+                </li>
+                <li>Optimization of user experience and conversion rate</li>
+                <li>
                   Development of new white-label web app to scan an ID or
-                  passport as proof of identification
-                </li>
-                <li>
-                  Added E2E Protractor tests for web app that relies heavily on
-                  the camera
-                </li>
-                <li>
-                  New features, bug fixes and maintenance of the yallo and
-                  Lebara websites and self-care web app
+                  passport as proof of identification{' '}
                 </li>
               </ul>
             </div>
             <div className="resume-date text-md-right">
-              <div className="text-primary">January 2020 - Present</div>
+              <div className="text-primary">January 2020 - September 2021</div>
               <div className="text-primary">Zürich, Switzerland</div>
             </div>
           </div>
@@ -167,6 +168,12 @@ const IndexPage = () => (
               <div className="subheading mb-3">
                 Bachelor of Science ZFH in Computer Science
               </div>
+              <ul>
+                <li>
+                  Bachelor Thesis: "Collection, Analysis, and Visualization of
+                  Smartphone‐Metadata"
+                </li>
+              </ul>
             </div>
             <div className="resume-date text-md-right">
               <div className="text-primary">September 2013 - July 2017</div>
@@ -207,6 +214,16 @@ const IndexPage = () => (
             <div className="resume-date text-md-right">
               <span className="text-primary">August 2007 - June 2008</span>
               <div className="text-primary">Davidsville, PA, USA</div>
+            </div>
+          </div>
+          <div className="resume-item d-flex flex-column flex-md-row justify-content-between">
+            <div className="resume-content">
+              <h3 className="mb-0">Kreisschule Mutschellen</h3>
+              <div>Attended Bezirksschule Mutschellen</div>
+            </div>
+            <div className="resume-date text-md-right">
+              <span className="text-primary">August 2003 - June 2007</span>
+              <div className="text-primary">Berikon, AG, Switzerland</div>
             </div>
           </div>
         </div>
@@ -281,6 +298,14 @@ const IndexPage = () => (
               <div className="subheading mb-3">Web Technologies</div>
               <ul className="fa-ul mb-0">
                 <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Angular
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  AngularJS
+                </li>
+                <li>
                   <i className="fa-li fa fa-check"></i>React
                 </li>
                 <li>
@@ -290,14 +315,6 @@ const IndexPage = () => (
                 <li>
                   <i className="fa-li fa fa-check"></i>
                   Gatsby
-                </li>
-                <li>
-                  <i className="fa-li fa fa-check"></i>
-                  Angular
-                </li>
-                <li>
-                  <i className="fa-li fa fa-check"></i>
-                  AngularJS
                 </li>
                 <li>
                   <i className="fa-li fa fa-check"></i>
@@ -313,7 +330,7 @@ const IndexPage = () => (
                 </li>
                 <li>
                   <i className="fa-li fa fa-check"></i>
-                  CSS / CSS-in-JS
+                  CSS3 / CSS-in-JS
                 </li>
               </ul>
             </div>
@@ -323,9 +340,6 @@ const IndexPage = () => (
                 <li>
                   <i className="fa-li fa fa-check"></i>
                   PL/SQL
-                </li>
-                <li>
-                  <i className="fa-li fa fa-check"></i> Android
                 </li>
                 <li>
                   <i className="fa-li fa fa-check"></i> Python
@@ -345,15 +359,19 @@ const IndexPage = () => (
               </ul>
             </div>
             <div className="m-4">
-              <div className="subheading mb-3">Interest and Curiosity</div>
+              <div className="subheading mb-3">Cloud</div>
               <ul className="fa-ul mb-0">
                 <li>
                   <i className="fa-li fa fa-check"></i>
-                  Haskell
+                  AWS Lambda
                 </li>
                 <li>
                   <i className="fa-li fa fa-check"></i>
-                  Elm
+                  Docker
+                </li>
+                <li>
+                  <i className="fa-li fa fa-check"></i>
+                  Kubernetes
                 </li>
               </ul>
             </div>
@@ -375,13 +393,7 @@ const IndexPage = () => (
                   <i className="fa-li fa fa-check"></i> Scrum
                 </li>
                 <li>
-                  <i className="fa-li fa fa-check"></i> Extreme Programming
-                </li>
-                <li>
-                  <i className="fa-li fa fa-check"></i> Docker
-                </li>
-                <li>
-                  <i className="fa-li fa fa-check"></i> Kubernetes
+                  <i className="fa-li fa fa-check"></i> Pair Programming
                 </li>
                 <li>
                   <i className="fa-li fa fa-check"></i> CI / CD
@@ -418,9 +430,9 @@ const IndexPage = () => (
         <div className="w-100">
           <h2 className="mb-5">Interests</h2>
           <p>
-            Apart from being a developer, I enjoy knitting and have a blog where
-            I publish my own patterns. I find knitting is a great way to relax,
-            and keep my hands busy while watching a movie or TV show.
+            Apart from being a developer, I enjoy knitting and and dyeing my own
+            yarn. I find knitting is a great way to relax, and keep my hands
+            busy while watching a movie or TV show.
           </p>
           <p className="mb-0">
             I also love to read - mainly thrillers und whodunits - and try to
@@ -457,8 +469,8 @@ const IndexPage = () => (
           <div className="resume-content mb-5">
             <h3 className="mb-0">SkillfullyTangled</h3>
             <div>
-              Knitting blog written with React &amp; Gatsby where I publish my
-              own patterns.
+              WooCommerce online shop where I sell my own hand‐dyed yarn and
+              publish knitting patterns.
             </div>
           </div>
           <div className="resume-content mb-5">
