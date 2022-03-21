@@ -36,7 +36,7 @@ const IndexPage = () => (
                   rel="noopener noreferrer"
                 >
                   <i className={`${icon}`} alt="foo bar"></i>
-                  <span class="visually-hidden">{name}</span>
+                  <span className="visually-hidden">{name}</span>
                 </a>
               );
             })}
@@ -282,6 +282,9 @@ const IndexPage = () => (
                   <i className="fa-li fa fa-check"></i>JavaScript
                 </li>
                 <li>
+                  <i className="fa-li fa fa-check"></i>TypeScript
+                </li>
+                <li>
                   <i className="fa-li fa fa-check"></i>NodeJS
                 </li>
                 <li>
@@ -352,7 +355,7 @@ const IndexPage = () => (
                   <i className="fa-li fa fa-check"></i> C
                 </li>
                 <li>
-                  <i className="fa-li fa fa-check"></i> F\#
+                  <i className="fa-li fa fa-check"></i> F#
                 </li>
                 <li>
                   <i className="fa-li fa fa-check"></i> Swift
