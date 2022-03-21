@@ -23,7 +23,7 @@ module.exports = {
       url: 'https://linkedin.com/in/stefanie-wehrle/',
     },
     {
-      icon: 'fa-solid fa-envelope',
+      icon: 'fas fa-envelope',
       name: 'E-Mail',
       url: 'mailto://steffinchen@gmail.com',
     },
