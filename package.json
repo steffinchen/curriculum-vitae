@@ -1,0 +1,57 @@
+{
+  "name": "curriculum-vitae",
+  "version": "2.0.0",
+  "description": "Online resume build with Angular",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steffinchen/curriculum-vitae"
+  },
+  "author": {
+    "name": "Stefanie Erne",
+    "email": "steffinchen@gmail.com"
+  },
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "lint": "ng lint"
+  },
+  "prettier": {
+    "printWidth": 100,
+    "singleQuote": true,
+    "overrides": [
+      {
+        "files": "*.html",
+        "options": {
+          "parser": "angular"
+        }
+      }
+    ]
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/common": "21.1.0",
+    "@angular/compiler": "21.1.0",
+    "@angular/core": "21.1.0",
+    "@angular/forms": "21.1.0",
+    "@angular/platform-browser": "21.1.0",
+    "@angular/platform-server": "21.1.0",
+    "@angular/router": "21.1.0",
+    "@angular/ssr": "21.1.0",
+    "rxjs": "7.8.2",
+    "tslib": "2.8.1"
+  },
+  "devDependencies": {
+    "@angular/build": "21.1.0",
+    "@angular/cli": "21.1.0",
+    "@angular/compiler-cli": "21.1.0",
+    "@tailwindcss/postcss": "4.1.18",
+    "@types/node": "20.19.30",
+    "jsdom": "27.4.0",
+    "postcss": "8.5.6",
+    "tailwindcss": "4.1.18",
+    "typescript": "5.9.3"
+  }
+}
