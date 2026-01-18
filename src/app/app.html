@@ -1,0 +1,107 @@
+<div class="flex flex-col md:flex-row min-h-screen">
+  <div
+    id="sidebar"
+    class="max-h-screen md:flex justify-center items-center bg-(image:--cyan-to-teal-green-vertical-gradient) text-white md:w-64 md:shrink-0 md:fixed md:top-0 md:left-0 md:h-screen md:overflow-y-auto"
+  >
+    <div class="flex h-18 md:hidden flex-row justify-between items-center px-6 py-4 border-b border-white/20">
+      <div class="text-lg font-semibold">
+        {{ cvData.personalInfo.firstName }}&nbsp;{{ cvData.personalInfo.lastName }}
+      </div>
+      <button (click)="collapsed = !collapsed" class="p-2 hover:bg-white/10 rounded transition-colors">
+        <span class="sr-only">Toggle Menu</span><i-lucide [img]="menuIcon"></i-lucide>
+      </button>
+    </div>
+    <nav [ngClass]="{ 'px-6 py-8 md:block ': true, hidden: collapsed }">
+      <div class="mb-8 hidden md:block">
+        <img
+          src="/images/avatar.jpg"
+          alt="Profile Picture of Stefanie Erne"
+          width="99"
+          height="125"
+          class="rounded-lg shadow-lg"
+        />
+      </div>
+      <ul class="space-y-4 text-2xl font-bold">
+        <li
+          [ngClass]="{
+            'text-white': activeSection() === 'about',
+            'text-white/70': activeSection() !== 'about',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          <button class="cursor-pointer" (click)="scrollToSection('about')">About</button>
+        </li>
+        <li
+          [ngClass]="{
+            'text-white': activeSection() === 'experience',
+            'text-white/70': activeSection() !== 'experience',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          <button class="cursor-pointer" (click)="scrollToSection('experience')">Experience</button>
+        </li>
+        <li
+          [ngClass]="{
+            'text-white': activeSection() === 'skills',
+            'text-white/70': activeSection() !== 'skills',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          <button class="cursor-pointer" (click)="scrollToSection('skills')">Skills</button>
+        </li>
+        <li
+          [ngClass]="{
+            'text-white': activeSection() === 'conference-talks',
+            'text-white/70': activeSection() !== 'conference-talks',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          <button class="cursor-pointer" (click)="scrollToSection('conference-talks')">Conference Talks</button>
+        </li>
+        <li
+          [ngClass]="{
+            'text-white': activeSection() === 'education',
+            'text-white/70': activeSection() !== 'education',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          <button class="cursor-pointer" (click)="scrollToSection('education')">Education</button>
+        </li>
+        <li
+          [ngClass]="{
+            'text-white': activeSection() === 'side-projects',
+            'text-white/70': activeSection() !== 'side-projects',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          <button class="cursor-pointer" (click)="scrollToSection('side-projects')">Side Projects</button>
+        </li>
+        <li
+          [ngClass]="{
+            'text-white': activeSection() === 'contact',
+            'text-white/70': activeSection() !== 'contact',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          <button class="cursor-pointer" (click)="scrollToSection('contact')">Contact</button>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main class="flex-1 md:ml-64 bg-gray-50 min-h-screen">
+    <div class="px-6 md:px-12">
+      <!-- <router-outlet /> -->
+      <app-personal-info
+        [data]="cvData.personalInfo"
+        (scrollClicked)="scrollToSection('experience')"
+      ></app-personal-info>
+      <app-experience [data]="cvData.experience"></app-experience>
+      <app-skills [data]="cvData.skills"></app-skills>
+      <app-presentations [data]="cvData.presentations"></app-presentations>
+      <app-education [data]="cvData.education"></app-education>
+      <app-side-projects [data]="cvData.sideProjects"></app-side-projects>
+    </div>
+    <app-contact [data]="cvData.personalInfo"></app-contact>
+  </main>
+</div>

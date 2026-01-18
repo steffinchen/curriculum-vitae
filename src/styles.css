@@ -1,0 +1,82 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+
+@theme {
+  --color-cyan-blue: oklch(65.32% 0.172 215.45);
+  --color-turquoise: oklch(70.18% 0.145 195.32);
+  --color-teal-green: oklch(72.84% 0.138 175.68);
+  --color-mint-green: oklch(76.42% 0.142 155.24);
+  --color-spring-green: oklch(79.28% 0.156 140.86);
+  --color-lime-green: oklch(82.15% 0.185 128.42);
+
+  --gray-900: oklch(19.37% 0.006 300.98);
+  --gray-700: oklch(36.98% 0.014 302.71);
+  --gray-400: oklch(70.9% 0.015 304.04);
+
+  --cyan-to-lime-green-vertical-gradient: linear-gradient(
+    180deg,
+    var(--color-cyan-blue) 0%,
+    var(--color-turquoise) 45%,
+    var(--color-teal-green) 80%,
+    var(--color-mint-green) 90%,
+    var(--color-lime-green) 100%
+  );
+
+  --cyan-to-teal-green-vertical-gradient: linear-gradient(
+    180deg,
+    var(--color-cyan-blue) 0%,
+    var(--color-turquoise) 50%,
+    var(--color-teal-green) 100%
+  );
+
+  --cyan-to-lime-green-horizontal-gradient: linear-gradient(
+    90deg,
+    var(--color-cyan-blue) 0%,
+    var(--color-turquoise) 25%,
+    var(--color-teal-green) 50%,
+    var(--color-mint-green) 75%,
+    var(--color-lime-green) 100%
+  );
+
+  --pill-accent: var(--color-cyan-blue);
+}
+
+@layer base {
+  body {
+    font-family: Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1 {
+    font-size: 2.25rem; /* 36px */
+    line-height: 2.5rem; /* 40px */
+  }
+
+  h2 {
+    font-size: 1.875rem; /* 30px */
+    line-height: 2.25rem; /* 36px */
+  }
+
+  h3 {
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  h4 {
+    font-size: 1.125rem; /* 18px */
+    line-height: 1.75rem; /* 28px */
+  }
+
+  h5 {
+    font-size: 1rem; /* 16px */
+    line-height: 1.5rem; /* 24px */
+  }
+
+  h6 {
+    font-size: 0.875rem; /* 14px */
+    line-height: 1.25rem; /* 20px */
+  }
+}

@@ -1,37 +1,59 @@
-# gatsby-starter-resume
+# CurriculumVitae
 
-Online version of my CV, built with Gatsby & :heart:. Based on the Gatsby starter [`gatsby-starter-resume`](https://www.gatsbyjs.org/starters/anubhavsrivastava/gatsby-starter-resume/).
+This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.0.
 
-## Install
+## Development server
 
-Make sure that you have the Gatsby CLI installed:
+To start a local development server, run:
 
-```sh
-npm install --global gatsby-cli
+```bash
+ng serve
 ```
 
-Use the usual Gatsby commands to build and run.
+Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
 
-Serve a development version with hot reloading:
+## Code scaffolding
 
-```sh
-gatsby develop
+Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+
+```bash
+ng generate component component-name
 ```
 
-Build:
+For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
-```sh
-gatsby build
+```bash
+ng generate --help
 ```
 
-Serve the production build:
+## Building
 
-```sh
-gatsby develop
+To build the project run:
+
+```bash
+ng build
 ```
 
-## Deploying using Github page
+This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
 
-`package.json` has a default script that uses `gh-pages` module to publish on Github pages. Simply running `npm run deploy` would publish the site on github pages.
+## Running unit tests
 
-Additionally, it also has [path-prefix](https://www.gatsbyjs.org/docs/path-prefix/) value set for gatsby config in `config.js`. Change `pathPrefix` to relevant path if your gatsby site is hosted on subpath of a domain, `https://theanubhav.com/somePath/`. If you are hosting it as root site, i.e, `https://theanubhav.com/` , remove the pathPrefix configuration.
+To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
+
+```bash
+ng test
+```
+
+## Running end-to-end tests
+
+For end-to-end (e2e) testing, run:
+
+```bash
+ng e2e
+```
+
+Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+
+## Additional Resources
+
+For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.

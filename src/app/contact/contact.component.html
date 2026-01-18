@@ -1,0 +1,41 @@
+<footer id="contact" class="mt-16 bg-gray-200 min-h-[80vh]">
+  <div class="max-w-5xl mx-auto px-6 py-12">
+    <h2 class="font-bold text-2xl mb-8">Contact</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div class="flex items-center gap-3 hover:text-cyan-500 hover:font-semibold transition-colors">
+        <i-lucide [img]="MailIcon" class="w-5 h-5 shrink-0"></i-lucide>
+        <a href="mailto:{{ data().email }}">
+          {{ data().email }}
+        </a>
+      </div>
+      <div class="flex items-center gap- \3 hover:text-cyan-500 hover:font-semibold transition-colors">
+        <i-lucide [img]="PhoneIcon" class="w-5 h-5 shrink-0"></i-lucide>
+        <a href="tel:{{ data().mobile }}">
+          {{ data().mobile }}
+        </a>
+      </div>
+      <div class="flex items-center gap-3">
+        <i-lucide [img]="MapPinIcon" class="w-5 h-5 shrink-0"></i-lucide>
+        <span>{{ data().address }}</span>
+      </div>
+      <div class="flex items-center gap-3 hover:text-cyan-500 hover:font-semibold transition-colors">
+        <i-lucide [img]="GlobeIcon" class="w-5 h-5 shrink-0"></i-lucide>
+        <a href="https://{{ data().homepage }}" rel="noopener">
+          {{ data().homepage }}
+        </a>
+      </div>
+      <div class="flex items-center gap-3 hover:text-cyan-500 hover:font-semibold transition-colors">
+        <i-lucide [img]="GithubIcon" class="w-5 h-5 shrink-0"></i-lucide>
+        <a href="https://github.com/{{ data().github }}" target="_blank" rel="noopener">
+          github.com/{{ data().github }}
+        </a>
+      </div>
+      <div class="flex items-center gap-3 hover:text-cyan-500 hover:font-semibold transition-colors">
+        <i-lucide [img]="LinkedInIcon" class="w-5 h-5 shrink-0"></i-lucide>
+        <a href="https://linkedin.com/in/{{ data().linkedin }}" target="_blank" rel="noopener">
+          linkedin.com/in/{{ data().linkedin }}
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>

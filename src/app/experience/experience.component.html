@@ -1,0 +1,30 @@
+<div id="experience" class="max-w-5xl">
+  <h2 class="font-bold text-gray-900 my-8">{{ data().title }}</h2>
+  @for (entry of data().entries; track entry.organization) {
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 hover:shadow-md transition-shadow">
+      <div class="flex flex-col md:flex-row md:justify-between md:items-start gap-4 mb-4">
+        <div class="flex-1">
+          <h3 class="font-semibold text-gray-900 mb-1">{{ entry.title }}</h3>
+          <div class="text-base font-medium text-gray-700">{{ entry.organization }}</div>
+        </div>
+        <div class="md:text-right md:min-w-max">
+          <div class="text-sm font-medium text-gray-600">{{ entry.period }}</div>
+          <div class="text-sm text-gray-500">{{ entry.location }}</div>
+        </div>
+      </div>
+      <ul class="space-y-3 mt-4">
+        @for (resp of entry.responsibilities; track resp) {
+          <li class="flex gap-1">
+            <span class="text-turquoise shrink-0 text-xl"><i-lucide [img]="minusIcon"></i-lucide></span>
+            <span class="text-gray-700 leading-relaxed">
+              @if (resp.category) {
+                <span class="font-semibold text-gray-900">{{ resp.category }}: </span>
+              }
+              {{ resp.description }}
+            </span>
+          </li>
+        }
+      </ul>
+    </div>
+  }
+</div>

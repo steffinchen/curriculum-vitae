@@ -1,0 +1,244 @@
+{
+  "personalInfo": {
+    "firstName": "Stefanie",
+    "lastName": "Erne",
+    "address": "Hauptstrasse 24, CH-8544 Attikon, Switzerland",
+    "mobile": "(+41) 76 588 07 15",
+    "email": "steffinchen@gmail.com",
+    "homepage": "steffinchen.github.io/curriculum-vitae",
+    "github": "steffinchen",
+    "linkedin": "stefanie-erne",
+    "taglines": [
+      "I believe in creating web apps that are effortless to use, a joy to maintain, and make lives easier.",
+      "Full-stack developer with 10+ years of experience and a passion for front-end."
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "entries": [
+      {
+        "title": "Senior Software Engineer",
+        "organization": "nxt Engineering GmbH",
+        "location": "Zürich, Switzerland",
+        "period": "May 2022 - current",
+        "responsibilities": [
+          {
+            "category": "Agile Software Engineering",
+            "description": "Collaborative design and delivery of high-quality, custom web applications across a diverse client portfolio using modern DevOps practices."
+          },
+          {
+            "category": "Scalable Platform Engineering",
+            "description": "Architected and developed an automated booking platform for a Zurich train travel startup using Angular and .NET Core, leveraging Terraform to manage the Azure infrastructure."
+          },
+          {
+            "category": "Cloud Transformation & Modernization",
+            "description": "Supported the functional evolution and migration of a major insurance platform to a cloud-native Azure environment, modernizing a legacy Angular and Java stack"
+          },
+          {
+            "category": "System Re-engineering",
+            "description": "Led the modernization of internal booking tools by re-implementing core features with Angular, GraphQL, and PostgreSQL, directly supporting the client's rapid scaling and operational growth."
+          }
+        ]
+      },
+      {
+        "title": "Senior Front-End Developer",
+        "organization": "Sunrise Communications AG",
+        "location": "Zürich, Switzerland",
+        "period": "Jan. 2020 - Sep. 2021",
+        "responsibilities": [
+          {
+            "category": null,
+            "description": "Designed and prototyped next-generation cloud-based serverless web application using Angular and AWS Lambda to integrate with leading CMS"
+          },
+          {
+            "category": null,
+            "description": "Developed and optimized the AngularJS yallo, Lebara, and Swype websites, online shop, and mobile application"
+          },
+          {
+            "category": null,
+            "description": "Optimization of user experience and conversion rate"
+          },
+          {
+            "category": null,
+            "description": "Development of new white-label web app to scan an ID or passport as proof of identification"
+          }
+        ]
+      },
+      {
+        "title": "Software Development Engineer",
+        "organization": "Findmypast Ltd",
+        "location": "London, United Kingdom",
+        "period": "Feb. 2018 - Sept. 2019",
+        "responsibilities": [
+          {
+            "category": null,
+            "description": "Migrated substantial parts of the .NET monolith to dedicated JavaScript (React), NodeJS and Elixir (micro-)services"
+          },
+          {
+            "category": null,
+            "description": "Implemented A/B experiments around subscription and payments UI"
+          },
+          {
+            "category": null,
+            "description": "Maintained and supported various Elixir, NodeJs, React and .NET services, mainly in the payment area, including integrations with WorldPay and PayPal"
+          }
+        ]
+      },
+      {
+        "title": "Senior Application Engineer",
+        "organization": "Swiss Re Management Ltd",
+        "location": "Zürich, Switzerland",
+        "period": "Aug. 2012 - Nov. 2017",
+        "responsibilities": [
+          {
+            "category": null,
+            "description": "Developed and maintained a web application which simplifies reporting financial data to the Swiss regulator FINMA. The reporting process could be reduced from eight to two weeks."
+          },
+          {
+            "category": null,
+            "description": "Responsible for the maintenance and integration of the system reporting Solvency II data to various European regulators. The systems include an in-house developed solution as well as a third-party solution. Tasks include integrating new updates provided by the vendor, administrating a Suse linux server, as well as providing bug fixes and new features."
+          }
+        ]
+      },
+      {
+        "title": "Software Development Trainee",
+        "organization": "Swiss Re Ltd",
+        "location": "Zürich, Switzerland",
+        "period": "Aug. 2008 - July 2012",
+        "responsibilities": [
+          {
+            "category": null,
+            "description": "As a member of the Solution Quality Assurance team, I was part of several code reviews on other projects."
+          },
+          {
+            "category": null,
+            "description": "Implemented a web application to calculate Key Performance Indicators (KPI) based on project data."
+          },
+          {
+            "category": null,
+            "description": "Developed and executed tests to compare performance of various web services such as SOAP, remote EJB and REST."
+          }
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "title": "Skills",
+    "categories": [
+      {
+        "category": "Software Engineering",
+        "skills": ["TypeScript", "JavaScript", "C#", "Java", "SQL"]
+      },
+      {
+        "category": "Web",
+        "skills": ["Angular", "React", "GraphQL", "Gatsby", "Webpack", "HTML", "CSS"]
+      },
+      {
+        "category": "Cloud / Plattform",
+        "skills": [
+          "Azure",
+          "Docker",
+          "Terraform/OpenTofu",
+          "GitLab Pipelines",
+          "GitHub Actions",
+          "Kubernetes",
+          "CI/CD",
+          "AWS Lambda"
+        ]
+      },
+      {
+        "category": "Tools & Methods",
+        "skills": ["Git", "PostgreSQL", "MSSQL", "Scrum", "Pair Programming", "Agile"]
+      },
+      {
+        "category": "Languages",
+        "skills": ["English (fluent)", "German (native)", "French (basic)"]
+      }
+    ]
+  },
+  "presentations": {
+    "title": "Conference Talks",
+    "entries": [
+      {
+        "role": "Speaker",
+        "event": ".NET Day Switzerland 2025",
+        "location": "Zurich, Switzerland",
+        "date": "Aug. 2025",
+        "details": [
+          {
+            "title": "Tickets to Ride: Conquering Booking Chaos with Resilient .NET Architecture",
+            "description": "Shared design patterns and lessons learned from building a scalable booking platform"
+          }
+        ]
+      }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "entries": [
+      {
+        "degree": "Bachelor of Science ZFH in Computer Science",
+        "institution": "ZHAW (Zurich University of Applied Sciences)",
+        "location": "Winterthur, Switzerland",
+        "period": "Sept. 2013 - July 2017",
+        "details": [
+          {
+            "description": "Bachelor Thesis: \"Collection, Analysis, and Visualization of Smartphone-Metadata\""
+          }
+        ]
+      },
+      {
+        "degree": "Federal VET Diploma in Information Technology (\"Informatikerin EFZ\")",
+        "institution": "BZZ (Berufsbildungszentrum Zürichsee)",
+        "location": "Horgen, Switzerland",
+        "period": "Aug. 2008 - July 2012",
+        "details": [
+          {
+            "description": "Completed the practical part of the education at Swiss Re Ltd."
+          },
+          {
+            "description": "Graduated as best student of the year in the Canton of Zürich, which was awarded a scholarship for ZHAW (Züricher Hochschule der Angewandten Wissenschaften)"
+          }
+        ]
+      },
+      {
+        "degree": "High-school diploma",
+        "institution": "Conemaugh Township High School",
+        "location": "Davidsville, PA, USA",
+        "period": "Aug. 2007 - June 2008",
+        "details": [
+          {
+            "description": "Attended the senior year of high school as an exchange student"
+          }
+        ]
+      },
+      {
+        "degree": "Bezirksschulabschluss",
+        "institution": "Kreisschule Mutschellen",
+        "location": "Berikon, AG, Switzerland",
+        "period": "Aug. 2003 - June 2007",
+        "details": [
+          {
+            "description": "Attended the Bezirksschule Mutschellen"
+          }
+        ]
+      }
+    ]
+  },
+  "sideProjects": {
+    "title": "Side Projects",
+    "entries": [
+      {
+        "name": "SkillfullyTangled",
+        "type": "WooCommerce Shop & Blog",
+        "url": "https://skillfullytangled.com",
+        "description": "Online shop where I sell my own hand-dyed yarn and publish knitting patterns."
+      },
+      {
+        "name": "Agile Trello",
+        "type": "Chrome Plugin",
+        "description": "Chrome plugin which adds agile functionality to Trello boards and cards."
+      }
+    ]
+  }
+}

@@ -1,51 +1,54 @@
 {
   "name": "curriculum-vitae",
-  "version": "0.0.1",
-  "description": "Online resume built with GatsbyJs",
+  "version": "2.0.0",
+  "description": "Online resume build with Angular",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/steffinchen/curriculum-vitae"
   },
   "author": {
-    "name": "Stefanie Wehrle",
+    "name": "Stefanie Erne",
     "email": "steffinchen@gmail.com"
   },
-  "dependencies": {
-    "gatsby": "^4.10.1",
-    "gatsby-plugin-manifest": "^4.10.1",
-    "gatsby-plugin-offline": "^5.10.1",
-    "gatsby-plugin-react-helmet": "^5.10.0",
-    "gatsby-plugin-sass": "^5.10.1",
-    "node-sass": "^7.0.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-helmet": "^6.1.0",
-    "react-images": "^0.5.19",
-    "react-scrollspy": "^3.4.3",
-    "smoothscroll-polyfill": "^0.4.4"
-  },
   "scripts": {
-    "develop": "gatsby develop",
-    "build": "npm run clean && gatsby build",
-    "deploy": "npm run clean && gatsby build --prefix-paths && gh-pages -d public",
-    "serve": "gatsby serve",
-    "clean": "rimraf .cache public",
-    "format": "prettier --write '**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "ng": "ng",
+    "start": "ng serve",
+    "build": "ng build",
+    "watch": "ng build --watch --configuration development",
+    "lint": "ng lint && npm run prettier",
+    "prettier": "npx prettier -c 'src/**/*.*'",
+    "prettier:write": "npx prettier -w 'src/**/*.*'"
+  },
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "dependencies": {
+    "@angular/common": "21.1.0",
+    "@angular/compiler": "21.1.0",
+    "@angular/core": "21.1.0",
+    "@angular/forms": "21.1.0",
+    "@angular/platform-browser": "21.1.0",
+    "@angular/platform-server": "21.1.0",
+    "@angular/router": "21.1.0",
+    "@angular/ssr": "21.1.0",
+    "lucide-angular": "0.562.0",
+    "rxjs": "7.8.2",
+    "tslib": "2.8.1"
   },
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "prettier": "^1.17.0",
-    "rimraf": "^2.6.3"
-  },
-  "keywords": [
-    "gatsby",
-    "gatsby-starter",
-    "gatsby-starter-resume"
-  ],
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/anubhavsrivastava/gatsby-starter-resume/issues"
-  },
-  "homepage": "https://github.com/anubhavsrivastava/gatsby-starter-resume#readme"
+    "@angular/build": "21.1.0",
+    "@angular/cli": "21.1.0",
+    "@angular/compiler-cli": "21.1.0",
+    "@tailwindcss/postcss": "4.1.18",
+    "@types/express": "^5.0.6",
+    "@types/node": "20.19.30",
+    "angular-eslint": "21.1.0",
+    "eslint": "^9.39.1",
+    "express": "^5.2.1",
+    "jsdom": "27.4.0",
+    "postcss": "8.5.6",
+    "prettier": "^3.8.0",
+    "tailwindcss": "4.1.18",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.47.0"
+  }
 }
