@@ -1,11 +1,4 @@
-import {
-  Component,
-  signal,
-  OnInit,
-  OnDestroy,
-  PLATFORM_ID,
-  inject,
-} from '@angular/core';
+import { Component, signal, OnInit, OnDestroy, PLATFORM_ID, inject } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import cvData from './cv.json';
@@ -74,15 +67,7 @@ export class App implements OnInit, OnDestroy {
       });
     }, options);
 
-    const sections = [
-      'about',
-      'experience',
-      'skills',
-      'conference-talks',
-      'education',
-      'side-projects',
-      'contact',
-    ];
+    const sections = ['about', 'experience', 'skills', 'conference-talks', 'education', 'side-projects', 'contact'];
     sections.forEach((id) => {
       const element = document.getElementById(id);
       if (element) {

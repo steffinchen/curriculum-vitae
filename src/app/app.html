@@ -23,74 +23,67 @@
       </div>
       <ul class="space-y-4 text-2xl font-bold">
         <li
-          (click)="scrollToSection('about')"
           [ngClass]="{
             'text-white': activeSection() === 'about',
             'text-white/70': activeSection() !== 'about',
             'hover:text-white transition-colors cursor-pointer': true,
           }"
         >
-          About
+          <button class="cursor-pointer" (click)="scrollToSection('about')">About</button>
         </li>
         <li
-          (click)="scrollToSection('experience')"
           [ngClass]="{
             'text-white': activeSection() === 'experience',
             'text-white/70': activeSection() !== 'experience',
             'hover:text-white transition-colors cursor-pointer': true,
           }"
         >
-          Experience
+          <button class="cursor-pointer" (click)="scrollToSection('experience')">Experience</button>
         </li>
         <li
-          (click)="scrollToSection('skills')"
           [ngClass]="{
             'text-white': activeSection() === 'skills',
             'text-white/70': activeSection() !== 'skills',
             'hover:text-white transition-colors cursor-pointer': true,
           }"
         >
-          Skills
+          <button class="cursor-pointer" (click)="scrollToSection('skills')">Skills</button>
         </li>
         <li
-          (click)="scrollToSection('conference-talks')"
           [ngClass]="{
             'text-white': activeSection() === 'conference-talks',
             'text-white/70': activeSection() !== 'conference-talks',
             'hover:text-white transition-colors cursor-pointer': true,
           }"
         >
-          Conference Talks
+          <button class="cursor-pointer" (click)="scrollToSection('conference-talks')">Conference Talks</button>
         </li>
         <li
-          (click)="scrollToSection('education')"
           [ngClass]="{
             'text-white': activeSection() === 'education',
             'text-white/70': activeSection() !== 'education',
             'hover:text-white transition-colors cursor-pointer': true,
           }"
         >
-          Education
+          <button class="cursor-pointer" (click)="scrollToSection('education')">Education</button>
         </li>
         <li
-          (click)="scrollToSection('side-projects')"
           [ngClass]="{
             'text-white': activeSection() === 'side-projects',
             'text-white/70': activeSection() !== 'side-projects',
             'hover:text-white transition-colors cursor-pointer': true,
           }"
         >
-          Side Projects
+          <button class="cursor-pointer" (click)="scrollToSection('side-projects')">Side Projects</button>
         </li>
         <li
-          (click)="scrollToSection('contact')"
           [ngClass]="{
             'text-white': activeSection() === 'contact',
             'text-white/70': activeSection() !== 'contact',
             'hover:text-white transition-colors cursor-pointer': true,
           }"
         >
-          Contact
+          <button class="cursor-pointer" (click)="scrollToSection('contact')">Contact</button>
         </li>
       </ul>
     </nav>

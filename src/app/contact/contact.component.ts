@@ -1,14 +1,6 @@
 import { Component, input } from '@angular/core';
 import { PersonalInfo } from '../types';
-import {
-  LucideAngularModule,
-  Mail,
-  Globe,
-  Linkedin,
-  Github,
-  Phone,
-  MapPin,
-} from 'lucide-angular';
+import { LucideAngularModule, Mail, Globe, Linkedin, Github, Phone, MapPin } from 'lucide-angular';
 
 @Component({
   selector: 'app-contact',

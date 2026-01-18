@@ -1,6 +1,6 @@
 import { Component, input } from '@angular/core';
 import { Experience } from '../types';
-import { Dot, LucideAngularModule, Minus } from 'lucide-angular';
+import { Dot, LucideAngularModule } from 'lucide-angular';
 
 @Component({
   selector: 'app-experience',

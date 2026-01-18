@@ -15,7 +15,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "lint": "ng lint"
+    "lint": "ng lint && npm run prettier",
+    "prettier": "npx prettier -c 'src/**/*.*'",
+    "prettier:write": "npx prettier -w 'src/**/*.*'"
   },
   "private": true,
   "packageManager": "npm@11.6.2",
