@@ -1,4 +1,4 @@
-<section id="about" class="min-h-screen max-w-4xl flex flex-col">
+<section id="about" class="min-h-[calc(100vh-4.5rem)] md:min-h-screen max-w-4xl flex flex-col">
   <div class="grow flex flex-col justify-center">
     <h1 class="md:text-8xl font-bold text-gray-900 mb-6 md:mb-12 md:-mt-12">
       {{ data().firstName }}&nbsp;<span class="text-cyan-blue">{{ data().lastName }}</span>
@@ -8,6 +8,6 @@
     }
   </div>
   <div class="flex-none h-16 flex justify-center items-center" (click)="scroll()">
-    <i-lucide [img]="ArrowIcon" class="w-8 h-8 cursor-pointer"></i-lucide>
+    <i-lucide [img]="ArrowIcon" class="w-8 h-8 cursor-pointer hover:text-cyan-500"></i-lucide>
   </div>
 </section>
