@@ -2,12 +2,6 @@ import { Component, input } from '@angular/core';
 import { PersonalInfo } from '../types';
 import {
   LucideAngularModule,
-  Mail,
-  Globe,
-  Linkedin,
-  Github,
-  Phone,
-  MapPin,
   ArrowBigDown,
 } from 'lucide-angular';
 
@@ -19,11 +13,5 @@ import {
 })
 export class PersonalInfoComponent {
   data = input.required<PersonalInfo>();
-  MailIcon = Mail;
-  MapPinIcon = MapPin;
-  LinkedInIcon = Linkedin;
-  GithubIcon = Github;
-  GlobeIcon = Globe;
-  PhoneIcon = Phone;
   ArrowIcon = ArrowBigDown;
 }

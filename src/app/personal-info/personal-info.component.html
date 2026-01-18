@@ -3,54 +3,9 @@
     <h1 class="md:text-8xl font-bold text-gray-900 mb-6 md:mb-12 md:-mt-12">
       {{ data().firstName }}&nbsp;<span class="text-cyan-blue">{{ data().lastName }}</span>
     </h1>
-    <p class="text-2xl font-bold text-gray-700 mb-6 md:mb-12 max-w-3xl text-balance">{{ data().tagline }}</p>
-
-    <div class="font-bold grid grid-cols-1 md:grid-cols-2 gap-4 text-gray-600">
-      <div class="flex items-center gap-2">
-        <i-lucide [img]="MailIcon" class="w-6 h-6"></i-lucide>
-        <a href="mailto:{{ data().email }}" class="hover:text-cyan-600 transition-colors">
-          {{ data().email }}
-        </a>
-      </div>
-      <div class="flex items-center gap-2">
-        <i-lucide [img]="PhoneIcon" class="w-6 h-6"></i-lucide>
-        <a href="tel:{{ data().mobile }}" class="hover:text-cyan-600 transition-colors">
-          {{ data().mobile }}
-        </a>
-      </div>
-      <div class="flex items-center gap-2">
-        <i-lucide [img]="MapPinIcon" class="w-6 h-6"></i-lucide>
-        <span>{{ data().address }}</span>
-      </div>
-      <div class="flex items-center gap-2">
-        <i-lucide [img]="GlobeIcon" class="w-6 h-6"></i-lucide>
-        <a href="https://{{ data().homepage }}" rel="noopener" class="hover:text-cyan-600 transition-colors">
-          {{ data().homepage }}
-        </a>
-      </div>
-      <div class="flex items-center gap-2">
-        <i-lucide [img]="GithubIcon" class="w-6 h-6"></i-lucide>
-        <a
-          href="https://github.com/{{ data().github }}"
-          target="_blank"
-          rel="noopener"
-          class="hover:text-cyan-600 transition-colors"
-        >
-          github.com/{{ data().github }}
-        </a>
-      </div>
-      <div class="flex items-center gap-2">
-        <i-lucide [img]="LinkedInIcon" class="w-6 h-6"></i-lucide>
-        <a
-          href="https://linkedin.com/in/{{ data().linkedin }}"
-          target="_blank"
-          rel="noopener"
-          class="hover:text-cyan-600 transition-colors"
-        >
-          linkedin.com/in/{{ data().linkedin }}
-        </a>
-      </div>
-    </div>
+    @for (line of data().taglines; track line) {
+      <p class="text-2xl font-bold text-gray-700 mb-3 max-w-3xl text-balance">{{ line }}</p>
+    }
   </div>
   <div class="flex-none h-16 flex justify-center items-center">
     <i-lucide [img]="ArrowIcon" class="w-8 h-8"></i-lucide>

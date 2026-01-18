@@ -7,6 +7,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { PresentationsComponent } from './presentations/presentations.component';
 import { EducationComponent } from './education/education.component';
 import { SideProjectsComponent } from './side-projects/side-projects.component';
+import { ContactComponent } from './contact/contact.component';
 import { NgClass } from '@angular/common';
 import { LucideAngularModule, MenuIcon } from 'lucide-angular';
 
@@ -20,6 +21,7 @@ import { LucideAngularModule, MenuIcon } from 'lucide-angular';
     PresentationsComponent,
     EducationComponent,
     SideProjectsComponent,
+    ContactComponent,
     NgClass,
     LucideAngularModule,
   ],
