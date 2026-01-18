@@ -22,13 +22,76 @@
         />
       </div>
       <ul class="space-y-4 text-2xl font-bold">
-        <li class="hover:text-white/80 transition-colors cursor-pointer">About</li>
-        <li class="hover:text-white/80 transition-colors cursor-pointer">Experience</li>
-        <li class="hover:text-white/80 transition-colors cursor-pointer">Skills</li>
-        <li class="hover:text-white/80 transition-colors cursor-pointer">Conference Talks</li>
-        <li class="hover:text-white/80 transition-colors cursor-pointer">Education</li>
-        <li class="hover:text-white/80 transition-colors cursor-pointer">Side Projects</li>
-        <li class="hover:text-white/80 transition-colors cursor-pointer">Contact</li>
+        <li
+          (click)="scrollToSection('about')"
+          [ngClass]="{
+            'text-white': activeSection() === 'about',
+            'text-white/70': activeSection() !== 'about',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          About
+        </li>
+        <li
+          (click)="scrollToSection('experience')"
+          [ngClass]="{
+            'text-white': activeSection() === 'experience',
+            'text-white/70': activeSection() !== 'experience',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          Experience
+        </li>
+        <li
+          (click)="scrollToSection('skills')"
+          [ngClass]="{
+            'text-white': activeSection() === 'skills',
+            'text-white/70': activeSection() !== 'skills',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          Skills
+        </li>
+        <li
+          (click)="scrollToSection('conference-talks')"
+          [ngClass]="{
+            'text-white': activeSection() === 'conference-talks',
+            'text-white/70': activeSection() !== 'conference-talks',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          Conference Talks
+        </li>
+        <li
+          (click)="scrollToSection('education')"
+          [ngClass]="{
+            'text-white': activeSection() === 'education',
+            'text-white/70': activeSection() !== 'education',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          Education
+        </li>
+        <li
+          (click)="scrollToSection('side-projects')"
+          [ngClass]="{
+            'text-white': activeSection() === 'side-projects',
+            'text-white/70': activeSection() !== 'side-projects',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          Side Projects
+        </li>
+        <li
+          (click)="scrollToSection('contact')"
+          [ngClass]="{
+            'text-white': activeSection() === 'contact',
+            'text-white/70': activeSection() !== 'contact',
+            'hover:text-white transition-colors cursor-pointer': true,
+          }"
+        >
+          Contact
+        </li>
       </ul>
     </nav>
   </div>

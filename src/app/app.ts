@@ -1,4 +1,12 @@
-import { Component, signal } from '@angular/core';
+import {
+  Component,
+  signal,
+  OnInit,
+  OnDestroy,
+  PLATFORM_ID,
+  inject,
+} from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import cvData from './cv.json';
 import { ExperienceComponent } from './experience/experience.component';
@@ -28,10 +36,71 @@ import { LucideAngularModule, MenuIcon } from 'lucide-angular';
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
-export class App {
+export class App implements OnInit, OnDestroy {
   menuIcon = MenuIcon;
 
   cvData = cvData;
 
   collapsed = true;
+
+  activeSection = signal<string>('about');
+
+  private platformId = inject(PLATFORM_ID);
+  private observer?: IntersectionObserver;
+
+  ngOnInit() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.setupIntersectionObserver();
+    }
+  }
+
+  ngOnDestroy() {
+    if (isPlatformBrowser(this.platformId)) {
+      this.observer?.disconnect();
+    }
+  }
+
+  private setupIntersectionObserver() {
+    const options = {
+      root: null,
+      rootMargin: '-20% 0px -70% 0px',
+      threshold: 0,
+    };
+
+    this.observer = new IntersectionObserver((entries) => {
+      console.log(
+        '🚀 -> App -> setupIntersectionObserver -> entries:',
+        entries,
+      );
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          this.activeSection.set(entry.target.id);
+        }
+      });
+    }, options);
+
+    const sections = [
+      'about',
+      'experience',
+      'skills',
+      'conference-talks',
+      'education',
+      'side-projects',
+      'contact',
+    ];
+    sections.forEach((id) => {
+      const element = document.getElementById(id);
+      if (element) {
+        this.observer?.observe(element);
+      }
+    });
+  }
+
+  scrollToSection(sectionId: string) {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      this.collapsed = true;
+    }
+  }
 }
