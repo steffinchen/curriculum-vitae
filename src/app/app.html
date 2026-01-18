@@ -99,7 +99,10 @@
   <main class="flex-1 md:ml-64 bg-gray-50 min-h-screen">
     <div class="px-6 md:px-12">
       <!-- <router-outlet /> -->
-      <app-personal-info [data]="cvData.personalInfo"></app-personal-info>
+      <app-personal-info
+        [data]="cvData.personalInfo"
+        (scrollClicked)="scrollToSection('experience')"
+      ></app-personal-info>
       <app-experience [data]="cvData.experience"></app-experience>
       <app-skills [data]="cvData.skills"></app-skills>
       <app-presentations [data]="cvData.presentations"></app-presentations>

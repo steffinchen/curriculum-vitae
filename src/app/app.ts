@@ -38,7 +38,6 @@ import { LucideAngularModule, MenuIcon } from 'lucide-angular';
 })
 export class App implements OnInit, OnDestroy {
   menuIcon = MenuIcon;
-
   cvData = cvData;
 
   collapsed = true;
@@ -68,10 +67,6 @@ export class App implements OnInit, OnDestroy {
     };
 
     this.observer = new IntersectionObserver((entries) => {
-      console.log(
-        '🚀 -> App -> setupIntersectionObserver -> entries:',
-        entries,
-      );
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           this.activeSection.set(entry.target.id);
