@@ -17,9 +17,9 @@
   --cyan-to-lime-green-vertical-gradient: linear-gradient(
     180deg,
     var(--color-cyan-blue) 0%,
-    var(--color-turquoise) 25%,
-    var(--color-teal-green) 50%,
-    var(--color-mint-green) 75%,
+    var(--color-turquoise) 45%,
+    var(--color-teal-green) 80%,
+    var(--color-mint-green) 90%,
     var(--color-lime-green) 100%
   );
 
