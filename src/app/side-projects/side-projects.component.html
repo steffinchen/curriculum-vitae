@@ -1,0 +1,24 @@
+<div class="max-w-5xl mt-16">
+  <h2 class="font-bold text-gray-900 mb-8">{{ data().title }}</h2>
+  @for (entry of data().entries; track entry.name) {
+    <div class="bg-white rounded-lg shadow-sm p-6 mb-6 hover:shadow-md transition-shadow">
+      <div class="flex flex-col gap-2 mb-3">
+        <div class="flex flex-col sm:flex-row sm:items-baseline gap-2">
+          <h3 class="font-semibold text-gray-900">{{ entry.name }}</h3>
+          <span class="text-sm font-medium text-gray-600">{{ entry.type }}</span>
+        </div>
+        @if (entry.url) {
+          <a
+            [href]="entry.url"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-turquoise hover:underline text-sm"
+          >
+            {{ entry.url }}
+          </a>
+        }
+      </div>
+      <p class="text-gray-700 leading-relaxed">{{ entry.description }}</p>
+    </div>
+  }
+</div>

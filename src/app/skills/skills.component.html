@@ -1,0 +1,17 @@
+<div class="max-w-5xl mt-16">
+  <h2 class="font-bold text-gray-900 mb-8">{{ data().title }}</h2>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    @for (category of data().categories; track category.category) {
+      <div class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow">
+        <h3 class="font-semibold text-gray-900 mb-4">{{ category.category }}</h3>
+        <div class="flex flex-wrap gap-2">
+          @for (skill of category.skills; track skill) {
+            <span class="px-3 py-1 bg-turquoise/10 text-gray-800 rounded-full text-sm font-medium">
+              {{ skill }}
+            </span>
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>
