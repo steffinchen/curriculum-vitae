@@ -23,6 +23,13 @@
     var(--color-lime-green) 100%
   );
 
+  --cyan-to-teal-green-vertical-gradient: linear-gradient(
+    180deg,
+    var(--color-cyan-blue) 0%,
+    var(--color-turquoise) 50%,
+    var(--color-teal-green) 100%
+  );
+
   --cyan-to-lime-green-horizontal-gradient: linear-gradient(
     90deg,
     var(--color-cyan-blue) 0%,
