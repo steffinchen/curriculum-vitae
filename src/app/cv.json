@@ -1,14 +1,14 @@
 {
   "personalInfo": {
     "firstName": "Stefanie",
-    "lastName": "Erne-Wehrle",
+    "lastName": "Erne",
     "address": "Hauptstrasse 24, CH-8544 Attikon, Switzerland",
-    "mobile": "(+41) 76-588-07-15",
+    "mobile": "(+41) 76 588 07 15",
     "email": "steffinchen@gmail.com",
     "homepage": "steffinchen.github.io/curriculum-vitae",
     "github": "steffinchen",
     "linkedin": "stefanie-erne",
-    "position": "Full Stack Software Engineer with a passion for front-end and automation"
+    "tagline": "Full-stack developer with 10+ years of experience and a passion for front-end. I believe in creating web apps that are effortless to use, a joy to maintain, and make lives easier."
   },
   "experience": {
     "title": "Experience",
