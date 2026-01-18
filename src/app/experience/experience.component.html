@@ -1,0 +1,25 @@
+<div>
+  <h2>{{ data().title }}</h2>
+  @for (entry of data().entries; track entry.organization) {
+    <div class="flex flex-column md:flex-row justify-between mb-3">
+      <div class="">
+        <h3 class="">{{ entry.title }}</h3>
+        <div class="">{{ entry.organization }}</div>
+        <ul>
+          @for (resp of entry.responsibilities; track resp) {
+            <li>
+              @if (resp.category) {
+                <span class="font-bold">{{ resp.category }}: </span>
+              }
+              {{ resp.description }}
+            </li>
+          }
+        </ul>
+      </div>
+      <div class="min-w-max">
+        <div class="text-right">{{ entry.period }}</div>
+        <div class="text-right">{{ entry.location }}</div>
+      </div>
+    </div>
+  }
+</div>
