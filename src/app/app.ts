@@ -3,17 +3,16 @@ import { RouterOutlet } from '@angular/router';
 import cvData from './cv.json';
 import { ExperienceComponent } from './experience/experience.component';
 import { NgClass } from '@angular/common';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
-import { FaIconComponent } from '@fortawesome/angular-fontawesome';
+import { LucideAngularModule, MenuIcon } from 'lucide-angular';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, ExperienceComponent, NgClass, FaIconComponent],
+  imports: [RouterOutlet, ExperienceComponent, NgClass, LucideAngularModule],
   templateUrl: './app.html',
   styleUrl: './app.css',
 })
 export class App {
-  faBars = faBars;
+  menuIcon = MenuIcon;
 
   cvData = cvData;
 

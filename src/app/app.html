@@ -3,7 +3,7 @@
     <div class="flex md:hidden flex-row justify-between align-top p-3">
       <div>{{ cvData.personalInfo.firstName }}&nbsp;{{ cvData.personalInfo.lastName }}</div>
       <button (click)="collapsed = !collapsed">
-        <span class="sr-only">Toggle Menu</span><fa-icon [icon]="faBars" />
+        <span class="sr-only">Toggle Menu</span><i-lucide [img]="menuIcon"></i-lucide>
       </button>
     </div>
     <nav [ngClass]="{ 'p-3 md:block md:h-screen': true, hidden: collapsed }">
