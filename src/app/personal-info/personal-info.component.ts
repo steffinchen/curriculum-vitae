@@ -8,6 +8,7 @@ import {
   Github,
   Phone,
   MapPin,
+  ArrowBigDown,
 } from 'lucide-angular';
 
 @Component({
@@ -24,4 +25,5 @@ export class PersonalInfoComponent {
   GithubIcon = Github;
   GlobeIcon = Globe;
   PhoneIcon = Phone;
+  ArrowIcon = ArrowBigDown;
 }

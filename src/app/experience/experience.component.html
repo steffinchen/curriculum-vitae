@@ -14,8 +14,8 @@
       </div>
       <ul class="space-y-3 mt-4">
         @for (resp of entry.responsibilities; track resp) {
-          <li class="flex gap-3">
-            <span class="text-turquoise mt-1.5 shrink-0">•</span>
+          <li class="flex gap-1">
+            <span class="text-turquoise shrink-0 text-xl"><i-lucide [img]="minusIcon"></i-lucide></span>
             <span class="text-gray-700 leading-relaxed">
               @if (resp.category) {
                 <span class="font-semibold text-gray-900">{{ resp.category }}: </span>
