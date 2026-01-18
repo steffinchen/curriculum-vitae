@@ -1,24 +1,34 @@
-<div class="flex flex-col md:flex-row">
-  <div class="bg-turquoise text-white">
-    <div class="flex md:hidden flex-row justify-between align-top p-3">
-      <div>{{ cvData.personalInfo.firstName }}&nbsp;{{ cvData.personalInfo.lastName }}</div>
-      <button (click)="collapsed = !collapsed">
+<div class="flex flex-col md:flex-row min-h-screen">
+  <div class="bg-turquoise text-white md:w-64 md:shrink-0">
+    <div class="flex md:hidden flex-row justify-between items-center px-6 py-4 border-b border-white/20">
+      <div class="text-lg font-semibold">
+        {{ cvData.personalInfo.firstName }}&nbsp;{{ cvData.personalInfo.lastName }}
+      </div>
+      <button (click)="collapsed = !collapsed" class="p-2 hover:bg-white/10 rounded transition-colors">
         <span class="sr-only">Toggle Menu</span><i-lucide [img]="menuIcon"></i-lucide>
       </button>
     </div>
-    <nav [ngClass]="{ 'p-3 md:block md:h-screen': true, hidden: collapsed }">
-      <div class="m-3 hidden md:block">
-        <img src="/images/avatar.jpg" alt="Profile Picture of Stefanie Erne" width="99" height="125" />
+    <nav [ngClass]="{ 'px-6 py-8 md:block md:h-screen': true, hidden: collapsed }">
+      <div class="mb-8 hidden md:block">
+        <img
+          src="/images/avatar.jpg"
+          alt="Profile Picture of Stefanie Erne"
+          width="99"
+          height="125"
+          class="rounded-lg shadow-lg"
+        />
       </div>
-      <div>Experience</div>
-      <div>Skills</div>
-      <div>Conference Talks</div>
-      <div>Education</div>
-      <div>Side Projects</div>
+      <ul class="space-y-3">
+        <li class="text-lg font-medium hover:text-white/80 transition-colors cursor-pointer">Experience</li>
+        <li class="text-lg font-medium hover:text-white/80 transition-colors cursor-pointer">Skills</li>
+        <li class="text-lg font-medium hover:text-white/80 transition-colors cursor-pointer">Conference Talks</li>
+        <li class="text-lg font-medium hover:text-white/80 transition-colors cursor-pointer">Education</li>
+        <li class="text-lg font-medium hover:text-white/80 transition-colors cursor-pointer">Side Projects</li>
+      </ul>
     </nav>
   </div>
 
-  <main class="p-3">
+  <main class="flex-1 px-6 py-8 md:px-12 md:py-10 bg-gray-50">
     <!-- <router-outlet /> -->
     <app-experience [data]="cvData.experience"></app-experience>
   </main>
