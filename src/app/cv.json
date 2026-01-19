@@ -24,15 +24,15 @@
         "responsibilities": [
           {
             "category": "Agile Software Engineering",
-            "description": "Collaborative design and delivery of high-quality, custom web applications across a diverse client portfolio using modern DevOps practices."
+            "description": "Designed and delivered high-quality, custom web applications in an agile team across a diverse client portfolio using modern DevOps practices."
           },
           {
             "category": "Scalable Platform Engineering",
-            "description": "Architected and developed an automated booking platform for a Zurich train travel startup using Angular and .NET Core, leveraging Terraform to manage the Azure infrastructure."
+            "description": "Developed a scalable architecture for a booking platform for a Zurich train travel startup using Angular and .NET Core, leveraging Terraform to manage the Azure infrastructure."
           },
           {
             "category": "Cloud Transformation & Modernization",
-            "description": "Supported the functional evolution and migration of a major insurance platform to a cloud-native Azure environment, modernizing a legacy Angular and Java stack"
+            "description": "Supported the functional evolution and migration of a major insurance platform to a cloud-native Azure environment, modernizing a legacy Angular and Java stack."
           },
           {
             "category": "System Re-engineering",
@@ -48,19 +48,19 @@
         "responsibilities": [
           {
             "category": null,
-            "description": "Designed and prototyped next-generation cloud-based serverless web application using Angular and AWS Lambda to integrate with leading CMS"
+            "description": "Designed and prototyped next-generation cloud-based serverless web application using Angular and AWS Lambda to integrate with leading CMS."
           },
           {
             "category": null,
-            "description": "Developed and optimized the AngularJS yallo, Lebara, and Swype websites, online shop, and mobile application"
+            "description": "Developed and optimized the AngularJS yallo, Lebara, and Swype websites, online shop, and mobile application."
           },
           {
             "category": null,
-            "description": "Optimization of user experience and conversion rate"
+            "description": "Optimized the user experience and conversion rate using A/B testing and rapid feedback cycles."
           },
           {
             "category": null,
-            "description": "Development of new white-label web app to scan an ID or passport as proof of identification"
+            "description": "Delivered the new white-label web app to scan an ID or passport as proof of identification."
           }
         ]
       },
@@ -142,7 +142,6 @@
           "GitLab Pipelines",
           "GitHub Actions",
           "Kubernetes",
-          "CI/CD",
           "AWS Lambda"
         ]
       },
