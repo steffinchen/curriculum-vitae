@@ -15,7 +15,6 @@ import { LucideAngularModule, MenuIcon } from 'lucide-angular';
 @Component({
   selector: 'app-root',
   imports: [
-    RouterOutlet,
     ExperienceComponent,
     PersonalInfoComponent,
     SkillsComponent,

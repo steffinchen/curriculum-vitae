@@ -43,6 +43,11 @@
 }
 
 @layer base {
+  html {
+    container-type: scroll-state;
+    scroll-timeline: --square-timeline y;
+  }
+
   body {
     font-family: Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     box-sizing: border-box;
@@ -78,5 +83,16 @@
   h6 {
     font-size: 0.875rem; /* 14px */
     line-height: 1.25rem; /* 20px */
+  }
+
+  li {
+    color: var(--color-cyan-blue);
+  }
+
+  @supports (--test: sibling-index()) {
+    li {
+      --hue: calc(215 - sibling-index() * 15);
+      color: oklch(65.32% 0.172 var(--hue));
+    }
   }
 }
